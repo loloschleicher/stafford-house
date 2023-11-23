@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Career Certificate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #certificate {
+            max-width: 80%;
+            margin: 20px auto;
+        }
+
+        #uploadInput {
+            display: none;
+        }
+
+        label {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Career Certificate</h1>
+
+    <!-- Display Image -->
+    <div id="certificate">
+        <img src="./aa.png" alt="Certificate">
+    </div>
+
+    <!-- Link to Certificate -->
+    <p>Download your certificate: <a href="./aa.png" target="_blank">Certificate Link</a></p>
+
+    <!-- Upload Button -->
+    <!-- <input type="file" id="uploadInput" accept=".pdf">
+    <label for="uploadInput" id="uploadLabel">Upload Certificate</label> -->
+
+    <script>
+        // Handle file upload
+        document.getElementById('uploadInput').addEventListener('change', handleFileSelect);
+
+        function handleFileSelect(event) {
+            const fileInput = event.target;
+            const file = fileInput.files[0];
+
+            if (file) {
+                // Perform your cloud upload here
+                // For simplicity, we'll just log the file details
+                console.log('File selected:', file.name, file.size, file.type);
+            }
+        }
+    </script>
+</body>
+</html>

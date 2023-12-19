@@ -8,12 +8,21 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
+            height: 100vh;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+
+        h1 {
+            margin-top: 20px; /* Add some space at the top */
         }
 
         #certificate {
-            max-width: 80%;
-            margin: 20px auto;
-        }
+    max-width: 100%; /* Adjust as needed */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 20px auto;
+}
 
         #uploadInput {
             display: none;
@@ -32,15 +41,15 @@
 </head>
 <body>
 
-    <h1>My Career Certificate</h1>
+    <h1>Stafford House Certificate</h1>
 
     <!-- Display Image -->
     <div id="certificate">
-        <img src="./aa.png" alt="Certificate">
+        <img src="./cert.jpeg" alt="Certificate">
     </div>
 
     <!-- Link to Certificate -->
-    <p>Download your certificate: <a href="./aa.png" target="_blank">Certificate Link</a></p>
+    <!-- <p>Download your certificate: <a href="./cert.jpeg" target="_blank">Certificate Link</a></p> -->
 
     <!-- Upload Button -->
     <!-- <input type="file" id="uploadInput" accept=".pdf">
